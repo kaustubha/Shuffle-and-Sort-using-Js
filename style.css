@@ -1,0 +1,197 @@
+html, body{
+    font-family: 'Noto Sans SC', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font-size: 16px;
+    font-weight: 500;
+}
+/*-- helper classes ---*/
+.text-center{
+    text-align: center;
+}
+/*-- common styles --*/
+
+ .btn-container .button{
+     border:none;
+     background-color: #72C3DC;
+     color:#fff;
+     padding:5px;
+     height: 40px;
+     display: block;
+     width: 140px;
+     border-radius: 5px;
+     cursor: pointer;
+     margin: auto;
+     -webkit-box-shadow: 0px 6px 0px #2B8EAD;
+     -moz-box-shadow: 0px 6px 0px #2B8EAD;
+     box-shadow: 0px 6px 0px #2B8EAD;
+ }
+ .btn-container .button:focus{
+     outline: none;
+     border:none;
+ }
+ .btn-container .button:first-child{
+    margin-bottom: 20px;
+}
+.copyright{
+    font-size: 12px;
+    width:100%;
+    float: left;
+    font-style: italic;
+    margin-top: 10px;
+}
+/*-- Media query for small/mobile screens --*/
+@media only screen and (min-width:320px) and (max-width:960px){
+    .container{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h1{
+        background-color: #333333;
+        height: 24px;
+        color:#fff;
+        margin: 0px;
+        padding: 10px 0px;
+        width: 100%;
+    }
+    .cards-grid{
+        width:100%;
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        padding:0px 15px;
+     }
+     .btn-container{
+        width:100%;
+        position: absolute;
+        top:44px;
+        text-align: center;
+    }
+    .cards-grid .card{
+        background-color: #EFEFEF;
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+        height: 45px;
+        line-height: 45px;
+    }
+    .cards-grid .card[data-card="1"] {
+        border-left:4px solid #6F98A8;
+     }
+     .cards-grid .card[data-card="2"] {
+        border-left:4px solid #2B8EAD;
+     }
+     .cards-grid .card[data-card="3"] {
+        border-left:4px solid #2F454E;
+     }
+     .cards-grid .card[data-card="4"] {
+        border-left:4px solid #2B8EAD;
+     }
+     .cards-grid .card[data-card="5"] {
+        border-left:4px solid #2F454E;
+     }
+     .cards-grid .card[data-card="6"] {
+        border-left:4px solid #BFBFBF;
+     }
+     .cards-grid .card[data-card="7"] {
+        border-left:4px solid #BFBFBF;
+     }
+     .cards-grid .card[data-card="8"] {
+        border-left:4px solid #6F98A8;
+     }
+     .cards-grid .card[data-card="9"] {
+        border-left:4px solid #2F454E;
+     }
+    .btn-container .button{
+        display: inline-block;
+    }
+    .btn-container .button:first-child{
+        margin-top: 20px;
+    }
+}
+/*-- Media query for Desktop/Large screens --*/
+@media only screen and (min-width:960px){
+    body{
+        background-color: #EFEFEF;
+        border-top:2px solid #BFBFBF;
+    }
+    .container{
+        max-width: 960px;
+        margin: auto;
+        display: block;
+    }
+    h1{
+        background:none;
+        height: 24px;
+        color:#000;
+        margin: 0px;
+        padding: 10px 0px;
+        width: 100%;
+    }
+    .cards-grid{
+       width:67%;
+       display: flex;
+       display: -webkit-box;
+       display: -moz-box;
+       display: -ms-flexbox;
+       display: -webkit-flex;
+       flex-wrap: wrap;
+       float:left;
+       margin-top: 0px;
+    }
+    .btn-container{
+        width:29%;
+        float:left;
+        position: relative;
+        padding-top: 15px;
+        top: 0px;
+    }
+    .cards-grid .card{
+        width: 32.33%;
+        height: 160px;
+        font-size: 58px;
+        font-weight: 500;
+        line-height: 150px;
+        text-align-last: center;
+        color: #fff;
+        margin-bottom: 0px;
+    }
+    .cards-grid .card[data-card="1"] {
+        background-color: #6F98A8;
+     }
+     .cards-grid .card[data-card="2"] {
+         background-color:#2B8EAD;
+     }
+     .cards-grid .card[data-card="3"] {
+         background-color:#2F454E;
+     }
+     .cards-grid .card[data-card="4"] {
+         background-color:#2B8EAD;
+     }
+     .cards-grid .card[data-card="5"] {
+         background-color:#2F454E;
+     }
+     .cards-grid .card[data-card="6"] {
+         background-color:#BFBFBF;
+     }
+     .cards-grid .card[data-card="7"] {
+         background-color:#BFBFBF;
+     }
+     .cards-grid .card[data-card="8"] {
+         background-color:#6F98A8;
+     }
+     .cards-grid .card[data-card="9"] {
+         background-color:#2F454E;
+     }
+     .btn-container .button{
+         display: block;
+     }
+}
+
